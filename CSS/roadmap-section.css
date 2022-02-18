@@ -1,0 +1,192 @@
+:root {
+    --primary-fonts-color: rgb(230,230,250);
+    --second-fonts-color : rgb(106,90,205);
+    --fonts-slateblue-shadow : 0 20px 30px var(--second-fonts-color);
+}
+
+.Roadmap-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4rem;
+    width: 100%;
+    height: max-content;
+    background-image: linear-gradient(to bottom, rgba(106, 90, 205, .4), black);
+}
+
+
+.Roadmap-section .roadmap-mark-title {
+    font-size: 80px;
+    color: var(--second-fonts-color);
+}
+
+.Roadmap-section .roadmap-mark-title span {
+    font-size: 50px;
+    color: var(--primary-fonts-color);
+}
+
+.Roadmap-section .phases-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+}
+
+.Roadmap-section .phases-container .phase-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+    min-height: 200px;
+    height: max-content;
+}
+
+.Roadmap-section .phases-container .rev-phase-wrapper {
+    justify-content: end;
+}
+
+.Roadmap-section .phases-container .phase-wrapper .phase-content, .rev-phase-content .phase-content {
+    position: relative;
+    width: 40%;
+    min-height: 100px;
+    height: max-content;
+    padding: 10px 20px;
+    text-align: left;
+    border: 3px solid var(--second-fonts-color);
+    border-radius: 4px;
+}
+
+.Roadmap-section .phases-container .rev-phase-wrapper .phase-content  {
+    flex-direction: column;
+}
+
+/*phase content planet decoration*/
+.Roadmap-section .phases-container .rev-phase-wrapper .phase-content {
+    position: relative;
+}
+
+.Roadmap-section .phases-container .phase-wrapper .bullet {
+    position: absolute;
+    top: 25%;
+    right: -100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.Roadmap-section .phases-container .rev-phase-wrapper .phase-content .bullet {
+    left: -100px;
+}
+
+.Roadmap-section .phases-container .phase-wrapper .in-progress .bullet {
+    animation: in-progress 5s ease-in-out infinite;
+}
+
+@keyframes in-progress {
+    0% {transform: rotateZ(0deg);}
+    50% {transform: rotateZ(360deg);}
+    100% {transform: rotateZ(0deg);}    
+}
+
+/* end of phase content planet decoration*/
+
+/* content txt decorations*/
+.Roadmap-section .phases-container .phase-wrapper .phase-content h2 {
+    text-align: center;
+    margin: 10px 0;
+    color: var(--second-fonts-color);
+}
+
+.Roadmap-section .phases-container .phase-wrapper .phase-content h3 {
+    color: yellow;
+    margin: 15px 5px;
+}
+
+.Roadmap-section .phases-container .phase-wrapper .phase-content p {
+    margin: 10px 0;
+}
+
+/* end of content txt decorations*/
+
+
+/* ======== center boxes ===========*/
+.Roadmap-section .roadmap-center-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    min-height: 100px;
+    height: max-content;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid var(--second-fonts-color);
+    border-radius: 4px;
+}
+
+@media (max-width:1350px) {
+    .Roadmap-section .roadmap-mark-title {
+        font-size: 80px;
+    }
+    .Roadmap-section .roadmap-mark-title span {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:1000px) {
+    
+    .Roadmap-section .roadmap-mark-title {
+        font-size: 50px;
+    }
+    .Roadmap-section .roadmap-mark-title span {
+        font-size: 20px;
+    }
+
+    .Roadmap-section .phases-container .phase-wrapper {
+        justify-content: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .Roadmap-section .phases-container .rev-phase-wrapper {
+        justify-content: center;
+    }
+
+    .Roadmap-section .phases-container .phase-wrapper .bullet {
+        top: 0%;
+        right: -70px;
+    }
+    
+    .Roadmap-section .phases-container .rev-phase-wrapper .phase-content .bullet {
+        left: auto;
+        right: -70px;
+    }
+
+    .Roadmap-section .phases-container .phase-wrapper .phase-content, .rev-phase-content .phase-content {
+        width: 80%;
+    }
+
+    .Roadmap-section .roadmap-center-box {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width:650px) {
+    .Roadmap-section .phases-container .phase-wrapper .bullet {
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+    .Roadmap-section .roadmap-mark-title {
+        font-size: 30px;
+    }
+
+    .Roadmap-section .phases-container .phase-wrapper .phase-content, .rev-phase-content .phase-content {
+        width: 90%;
+    }
+}

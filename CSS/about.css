@@ -1,0 +1,74 @@
+:root {
+    --primary-fonts-color: rgb(230,230,250);
+    --second-fonts-color : rgb(106,90,205);
+    --fonts-slateblue-shadow : 0 20px 30px var(--second-fonts-color);
+}
+
+.About-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.About-section .about-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: max-content;
+}
+
+.About-section .about-wrapper .About-title {
+    font-size: 80px;
+    color: var(--second-fonts-color);
+}
+
+.About-section .about-wrapper .About-txt {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+@media (max-width:1350px) {
+    .About-section .about-wrapper .About-title {
+        font-size: 70px;
+    }
+    
+    .About-section .about-wrapper .About-txt {
+        font-size: 40px;
+    }   
+}
+
+@media (max-width:1000px) {
+    .About-section .about-wrapper .About-title {
+        font-size: 50px;
+    }
+    
+    .About-section .about-wrapper .About-txt {
+        font-size: 25px;
+    }   
+}
+
+@media (max-width:500px) {
+    .About-section {
+        min-height: 100vh;
+        height: max-content;
+        margin: 50px 0;
+    }
+    .About-section .about-wrapper {
+        width: 90%;
+    }
+    .About-section .about-wrapper .About-title {
+        font-size: 30px;
+    }
+    
+    .About-section .about-wrapper .About-txt {
+        font-size: 18px;
+        min-height: min-content;
+        height: max-content;
+    }   
+}

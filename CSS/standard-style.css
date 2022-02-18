@@ -1,0 +1,48 @@
+/* ------ font link ---- */
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&family=Rowdies:wght@300&display=swap');
+/* ------ end of font links --- */
+
+* {
+    margin: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Rowdies', cursive;
+}
+a {
+    color: var(--primary-fonts-color);
+}
+:root {
+    --primary-fonts-color: rgb(230,230,250);
+    --second-fonts-color : rgb(106,90,205);
+    --fonts-slateblue-shadow : 0 20px 30px var(--second-fonts-color);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    color: var(--primary-fonts-color);
+}
+
+.Primary-header {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+
+.Primary-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+}

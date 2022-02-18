@@ -1,2 +1,2 @@
 # Arion-Mint
-is an NFT project
+an NFT project

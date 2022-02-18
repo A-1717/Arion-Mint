@@ -1,0 +1,40 @@
+:root {
+    --primary-fonts-color: rgb(230,230,250);
+    --second-fonts-color : rgb(106,90,205);
+    --fonts-slateblue-shadow : 0 20px 30px var(--second-fonts-color);
+}
+
+.Primary-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    padding-top: 100px;
+}
+
+.Primary-footer .social-media-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 150px;
+    border-top: 1px solid var(--second-fonts-color);
+}
+
+.Primary-footer .social-media-section .social-media-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 3rem;
+    width: max-content;
+    height: max-content;
+}
+
+.Primary-footer .social-media-section .social-media-container a {
+    font-size: 40px;
+}
+
+.Primary-footer .social-media-section .social-media-container a:hover {
+    color: var(--second-fonts-color);
+}
