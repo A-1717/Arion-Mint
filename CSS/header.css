@@ -249,7 +249,7 @@
     font-size: 40px;
     transition-duration: 0.5s;
 }
-.Primary-header .social-comunities .social-comunities-container .social-btn i {
+.Primary-header .social-comunities .social-comunities-container .social-btn i:hover {
     text-shadow: var(--fonts-slateblue-shadow);
 }
 .Primary-header .social-comunities .social-comunities-container .social-btn:hover {
