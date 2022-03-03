@@ -29,6 +29,7 @@
     width: 100px;
     height: max-content;
     animation: logo-animation 5s infinite;
+    cursor: pointer;
 }
 @keyframes logo-animation {
     0%{transform: rotateY(0deg); }
@@ -41,6 +42,7 @@
     margin-bottom: -10px;
     font-size: 50px;
     font-family: starforge;
+    cursor: pointer;
 }
 
 @media (max-width:1560px) {
